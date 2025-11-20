@@ -28,9 +28,7 @@ class MainPage(tk.Tk):
         funds_button.pack(pady=5)
 
 if __name__ == "__main__":
-    import sqlite3
     connection = sqlite3.connect("db.sqlite")
-
     app = MainPage(connection)
     app.mainloop()
 
